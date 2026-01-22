@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/quiz.js"></script>
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <header class="header-custom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="site-name">Zeineb Fourati</h1>
+
+            </div>
+
+            <nav>
+                <a href="index.html" class="nav-link-custom">Accueil</a>
+                <a href="parcours.html" class="nav-link-custom">Parcours</a>
+                <a href="competences.html" class="nav-link-custom">Compétences</a>
+                <a href="stages.html" class="nav-link-custom">Stages</a>
+                <a href="evenements.html" class="nav-link-custom">Événements</a>
+                <a href="matieres.html" class="nav-link-custom">Matières</a>
+                <a href="passions.html" class="nav-link-custom">Passions</a>
+                <a href="quiz.html" class="nav-link-custom">Quiz</a>
+                <a href="contact.html" class="nav-link-custom">Contact</a>
+                <a href="temoignage.html" class="nav-link-custom">IIT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container contact-page">
+
+        <section class="contact-card">
+
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-subtitle">
+                N’hésitez pas à me contacter pour toute question, information ou collaboration.
+            </p>
+            <form class="contact-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="nom">Nom et Prénom </label>
+                    <input type="text" id="nom" class="contact-input" placeholder="Votre nom et prenom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="contact-input" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" class="contact-input" placeholder="Sujet du message" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="contact-textarea" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="button" class="contact-btn" onclick="verifierContact()">
+                    Envoyer le message
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2025 – Programmation Web 1 – IIT
+    </footer>
+
+</div>
+
+</body>
+</html>
